@@ -184,10 +184,12 @@ h2{
 }
 
 .encabezado nav ul li a:hover{
-    color: #242424;
-    font-weight: 800;
+    color: white;
+    transform: scale(1.02);
+	cursor: pointer;
+	transition: transform 0.2s;
+    
 } 
-
 
 p{
     display: inline-block;
@@ -316,7 +318,8 @@ p{
 
 .boton_enviar:hover{
     background-color: #a84308;
-    transform: translateY(-0.25em);
+    transform: translateY(-0.20em);
+    transition: transform 0.2s;
     cursor: pointer;
 }
   
