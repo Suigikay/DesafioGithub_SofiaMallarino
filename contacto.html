@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo de chispa" width="150px">
+                </a>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotras.html">Nosotras</a></li>
+                    <li><a href="servicios.html">Soluciones</a></li>
+                    <li><a href="clientes.html">Casos de éxito</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <form action="envio.php" method="post" id="contacto">
+                        <h2 class="textCenter">Contacto</h2>
+                        <div id="formularioContacto">
+
+                            <div class="mainCheckbox">
+                                <legend>Seleccioná tu interés</legend>
+
+                                <input type="checkbox" name="branding" id="branding" value="branding">
+                                <label for="branding">Branding</label>
+
+                                <input type="checkbox" name="diseño" id="diseño" value="diseño">
+                                <label for="diseño">Diseño creativo</label>
+
+                                <input type="checkbox" name="community" id="community" value="community">
+                                <label for="community">Community Managment</label>
+
+                                <input type="checkbox" name="opt. ads" id="opt. ads" value="opt. ads">
+                                <label for="opt. ads">Optimización de anuncios</label>
+
+                                <input type="checkbox" name="posicionamiento" id="posicionamiento"
+                                    value="posicionamiento">
+                                <label for="posicionamiento">Posicionamiento</label>
+
+                                <input type="checkbox" name="diseño web" id="diseño web" value="diseño web">
+                                <label for="diseño web">Diseño web</label>
+                            </div>
+
+
+                            <div class="mainInput">
+
+                                <label for="nombre"></label>
+                                <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+
+                                <label for="apellido"></label>
+                                <input type="text" placeholder="Apellido" name="apellido" id="apellido" required>
+
+                                <label for="email"></label>
+                                <input type="email" placeholder="Correo electrónico" name="email" id="email" required>
+
+                                <label for="telefono"></label>
+                                <input type="tel" placeholder="Teléfono de contacto" name="telefono" id="telefono"
+                                    required>
+
+                                <label for="mensaje"></label>
+
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="5"
+                                    placeholder="Dejá tu mensaje"></textarea>
+                                <input type="submit" value="Enviar" class="boton_enviar">
+                            </div>
+
+                        </div>
+
+                    </form>
+                </article>
+            </section>
+
+
+        </main>
+
+        <footer id="footer">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de chispa" width="100px">
+            </a>
+            <div class="footerEncotranos">
+                <ul>
+
+                    <li>
+                        <h4>Encontranos</h4>
+                    </li>
+
+                    <li>(+598) 099 xxx xxx</li>
+                    <li>(+598) 098 xxx xxx</li>
+                    <li>mail@mail.com</li>
+                </ul>
+            </div>
+
+            <div class="footerHorario">
+
+                <ul>
+                    <li>
+                        <h4>Horario</h4>
+                    </li>
+                    <li>Lunes a viernes</li>
+                    <li>9 a 18 hs </li>
+                </ul>
+            </div>
+            <div class="footerSeguinos">
+
+                <h4>Seguínos</h4>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/fb.png" alt="Nuestro Facebook" width="45px">
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/ig.png" alt="Nuestro Instagram" width="45px">
+                </a>
+
+                <a href="https://twitter.com/?lang=en" target="_blank">
+                    <img src="img/twitter.png" alt="Nuestro Twitter" width="45px">
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="img/linked in.png" alt="Nuestro LinkedIn" width="45px">
+                </a>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+</body>
+
+</html>

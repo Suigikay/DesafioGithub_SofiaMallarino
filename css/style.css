@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;700&display=swap');
+
+
+ *{
+	font-family: 'Montserrat', sans-serif;
+	 margin: 0;
+	padding: 0;
+}  
+
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(img/background.jpg);
+	background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700, bold;
+    font-size: 5rem;
+    color:#c54d08;
+    margin: 4rem 2rem  ;
+
+}
+
+h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700, bold;
+    font-size: 3.5rem;
+    color:#c54d08;
+    margin: 4rem 2rem  ;
+
+}
+
+/* ---------------------------------- grid ---------------------------------- */
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 2fr;
+	grid-template-rows: auto;
+	grid-template-areas:"nav" "main" "mainCheckbox" "mainInput" "footer";
+}
+
+#nav{
+    grid-area: nav;
+}
+
+.main{
+    grid-area: main;
+}
+.mainCheckbox{
+    grid-area: mainCheckbox;
+}
+
+.mainInput{
+    grid-area: mainInput;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+/* ------------------------------ media queries ----------------------------- */
+
+
+
+@media (min-width:900){
+	.contenedor{
+		grid-template-columns: 2fr;
+		grid-template-rows: auto;
+		grid-template-areas: "nav nav" "main main" "mainCheckbox" "mainInput" "footer footer";
+	}
+}
+
+@media (min-width:0 ) and (max-width:600px){
+    .contenedor{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 10vh 60vh 30vh;
+        grid-template-areas: "nav"
+        "main"
+        "mainCheckbox"
+        "mainInput"
+        "footer";
+    }
+
+    nav img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .encabezado nav{
+        text-align: center;
+    }
+
+    .textCenter{
+        text-align: center;
+
+    }
+    #formularioContacto {
+        display: flex;
+        flex-direction: column;
+        height: 50rem;
+        padding-top:600px ;
+        padding-bottom: 200px;
+    }
+
+    .mainCheckbox {
+        align-self: center;
+        padding-left:200px
+    }
+
+
+    .mainInput {
+        padding-top: 220px;
+        font-size: 3rem;
+        width: 5rem;
+    }
+    .encabezado nav {
+        background-color: #dd9266d0;
+        position: sticky;
+        top: 0;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .serviciosMain{
+        padding-top: 350px;
+    }
+
+    .footerMobile{
+        width: 100%;
+        display: flex;
+        display: block;
+        height: 50rem ;
+    }
+
+    .nosotras{
+        position: relative;
+        padding-top: 550px;
+
+    }
+
+}
+
+/* --------------------------- comienza nav style --------------------------- */
+
+ .encabezado{
+    position: relative;
+} 
+.encabezado nav{
+    background-color: #ffbd94;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.encabezado nav a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.encabezado nav ul{
+    display: inline-block;
+	margin-left: 40px ;
+}
+
+.encabezado nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+	margin-top: -50px;
+    height: 30px;
+	vertical-align: text-top;
+}
+
+.encabezado nav ul li a{
+    font-size: 2rem;
+    font-weight: 550;
+    color: #c54d08
+}
+
+.encabezado nav ul li a:hover{
+    color: #242424;
+    font-weight: 800;
+} 
+
+
+p{
+    display: inline-block;
+}
+
+ /* ------------------------ comienza style servicios ------------------------ */
+
+.servicios1{
+    margin-left:20% ;
+}
+
+.servicios1>*{
+    display: flex;
+    display:inline-block;
+  vertical-align:middle;
+  background-color:rgb(233, 187, 160);
+}
+
+.servicios2{
+    margin-bottom: 10%;
+    margin-left: 20%;
+
+}
+
+.servicios2>*{
+    display: flex;
+    display:inline-block;
+    vertical-align:middle;
+    background-color:rgb(233, 187, 160);
+  
+}
+
+.servicios1 p{
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+   
+} 
+
+.servicios2 p{
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+}
+
+.branding{
+    width:min-content;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+.contenido{
+    width:min-content;
+    margin: 50px;
+    padding: 10px;
+}
+
+.community{
+    width: min-content;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+.anuncios{
+    width:min-content;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+.posicionamiento{
+    width:min-content;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+.diseño{
+    width:min-content;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+ /* ------------------------- comienza Contacto style ------------------------ */
+
+
+.mainCheckbox{
+    font-size:1.8rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;  
+}
+    
+
+.mainCheckbox label{
+   margin-left: 20px;
+   margin-top: -28px;
+   padding: 10px 2px;
+    
+}
+
+.mainInput{
+    font-size:1.8rem;
+     display: flex;
+    flex-direction: column;
+    margin-left: 50%;  
+     margin-top: -210px; 
+    width: 22%; 
+}
+
+.mainInput label{
+    padding: 10px;
+    padding-top: 0;
+}
+
+.boton_enviar{
+    width: 20%;
+    margin: 10px;
+    border: solid 1px coral;
+    background-color: #cc906d;
+    color: white;
+}
+
+.boton_enviar:hover{
+    background-color: #a84308;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+  
+/* ----------------------- comienza style de Nosotras ----------------------- */
+
+.nosotras{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+    font-size: 2.5em
+}
+
+.nosotras p{
+    padding: 2rem;
+}
+
+.info_flo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.info_eri{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+.info_nosotras-texto {
+    font-size: 2rem;
+    margin: 3rem;
+    padding: 3rem;
+}
+
+ /* ----------------------- comienza style de Clientes ----------------------- */
+
+
+#clientes{
+    width: 100%;
+    height: 250px;
+    margin: 50px ;
+}
+
+#clientes a{
+    text-decoration: none;
+}
+
+#clientes img{
+    margin: 0 30px;
+    padding: 10px;
+    align-items: center;
+}
+
+.clientes1{
+    display:inline-block;
+  vertical-align:middle;
+
+}
+
+.clientes2{
+    display:inline-block;
+  vertical-align:middle;
+
+}
+
+.info_maciel{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5%;       
+}
+
+.info_codigouy{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+
+.info_rame{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+
+.info_camden{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    margin-left: 5%;
+
+}
+
+.info_clientes-texto{
+    font-size: 2rem;
+    margin: 3rem;
+    padding: 3rem;
+}
+
+ /* -------------------------- comienza style footer ------------------------- */
+
+#footer {
+    background-color: #ffbd94;
+    border: solid 1px grey;
+    font-size: 1.8rem;
+    list-style: none;
+    height: 11rem;
+    margin-top: 5rem;
+    display: flex;
+    height: 10rem;
+    
+
+}
+
+#footer a{
+    text-decoration: none;
+}
+
+#footer ul{
+    display: inline-block;
+    list-style: none;
+   
+}
+
+.footerEncotranos{
+	margin: 10px 50px 10px 100px;
+}
+
+.footerHorario {
+    vertical-align: top;
+}
+
+.footerHorario ul{
+    margin: 10px 50px;
+}
+
+.footerSeguinos{
+    margin: 10px 50px;
+
+}
